@@ -1,3 +1,9 @@
+# This is a off-line copy of the Next project.
+
+# Off-line copy reason:
+
+# I would like to put all the Hexo source files on github so that i could Generate & Deploy my posts on different computers, but if i used `git clone`, the next theme folder would be grey and unaccessable(readonly) in this repo, so i need to download the zip file manually.
+
 # NexT
 
 > 精于心，简于形

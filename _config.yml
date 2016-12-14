@@ -5,10 +5,11 @@
 # Site
 title: MySlsh
 subtitle:
-description:
-author: Rick Zhu
+description: 以为漂泊是成长，必经的路牌
+author: Rick
 language: zh-Hans
 timezone:
+avatar: /images/avatar.gif
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'

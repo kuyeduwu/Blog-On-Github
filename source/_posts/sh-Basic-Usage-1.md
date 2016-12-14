@@ -11,6 +11,7 @@ categories: Linux
 ```bash
 $ sh test.sh
 ```
+<!--more-->
 
 如果文件不能被执行，可以先执行`chmod +x`命令，再运行：
 ```bash

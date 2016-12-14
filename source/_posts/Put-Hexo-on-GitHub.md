@@ -48,15 +48,19 @@ categories: Accessories
 3. `$ cd /home/your user name/hexo-files`
 4. `$ npm install`
   
-#### 第四步：根据自己的需求更改Hexo的设置，配置好主题
+#### 第四步：根据自己的需求更改Hexo的设置
 
-这里应当注意，很多Hexo主题都是托管在GitHub上的，在安装主题的时候大多会是通过`git clone`命令将主题文件克隆到Hexo的`themes`文件夹下。
+1. 安装`hexo-deployer-git`: `$ npm install hexo-deployer-git`
+2. 设置站点名称等其他设置，这里请参考Hexo官方文档中关于`_config.yml`的部分。
+3. 设置主题
 
-如果是在本地管理Hexo，没有任何问题，但是对于我这个奇（变）葩（态）的需求来说，会产生严重问题：
+    这里应当注意，很多Hexo主题都是托管在GitHub上的，在安装主题的时候大多会是通过`git clone`命令将主题文件克隆到Hexo的`themes`文件夹下。
 
-我们需要将整个`<hexo-files>`目录下的所有文件和子目录作为一个`repo`放到GitHub上，而通过`git clone`命令会自动把所下载的主题作为一个`repo`放在`themes`文件夹下，这样就导致在我们自己的`repo`下有一个属于别人的子`repo`，当`push`到GitHub上以后，在GitHub上，子`repo`中的内容会显示为一个灰色的文件夹，其中的内容不可见。
+    如果是在本地管理Hexo，没有任何问题，但是对于我这个奇（变）葩（态）的需求来说，会产生严重问题：
 
-为了避免这种情况，我们需要使用`wget`或者是`curl`命令，手动下载主题的`zip`或者`tar.gz`文件，然后手动解压到`<hexo-files>`中的`themes`文件夹下。
+    我们需要将整个`<hexo-files>`目录下的所有文件和子目录作为一个`repo`放到GitHub上，而通过`git clone`命令会自动把所下载的主题作为一个`repo`放在`themes`文件夹下，这样就导致在我们自己的`repo`下有一个属于别人的子`repo`，当`push`到GitHub上以后，在GitHub上，子`repo`中的内容会显示为一个灰色的文件夹，其中的内容不可见。
+
+  为了避免这种情况，我们需要使用`wget`或者是`curl`命令，手动下载主题的`zip`或者`tar.gz`文件，然后手动解压到`<hexo-files>`中的`themes`文件夹下。
 
 #### 第五步：设置Git所使用的用户名和邮箱：
 

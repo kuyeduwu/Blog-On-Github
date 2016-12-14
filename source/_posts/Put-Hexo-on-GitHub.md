@@ -37,9 +37,9 @@ categories: Accessories
 
 #### 第二步：通过nvm安装Node.js
 
-1. `$ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh
+1. `$ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | sh`
 2. 重启终端
-3. `$nvm install stable
+3. `$nvm install stable`
   
 #### 第三步：安装Hexo，并且在`<hexo-files>`文件夹中初始化
 

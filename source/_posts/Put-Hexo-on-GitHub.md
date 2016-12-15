@@ -31,6 +31,8 @@ categories: Accessories
 
 ### VPS端
 
+这里其实存在一个先后顺序，如果先配置VPS端的话，后续在个人电脑端配置的时候就需要用已经`push`到GitHub上的Hexo内容替换本地电脑上的Hexo内容，同理，如果是先配置个人电脑端的话，在VPS端就需要用已经`push`到GitHub上的Hexo内容替换VPS本地电脑上的Hexo内容。
+
 #### 第一步：在VPS上安装Git
 
 ```bash
@@ -92,5 +94,69 @@ $ git add *.*
 $ git commit -m "Create hexo files."
 $ git remote add origin "第六步得到的地址"
 $ git pull origin master
-$ git push -u origin master #之后会提示输入GitHub的账号和密码。
+$ git push -u origin master #之后会提示输入GitHub的账号和密码
 ```
+
+### 个人电脑端
+
+#### 第一步：重复上面前三步，安装好Git和Hexo，并且通过`hexo init`初始化到文件夹`<hexo-files>`中。
+
+#### 第二步：在`<hexo-files>`文件夹中初始化Git
+
+```bash
+$ git init
+$ git add .
+$ git remote add origin "GitHub远程仓库的地址，即是前面第六步得到的地址"
+```
+
+#### 第三步：用GitHub上的内容替换掉本地内容
+
+```bash
+$ git reset --hard origin/master
+$ git pull origin master
+```
+
+## 使用
+
+### 发文章
+
+#### VPS
+
+正常来讲，通过Hexo发布一篇新文章需要通过`hexo new post post-title`命令，这条命令会自动在`<hexo-files>`下的`<_source/_posts>`目录下新建一个名为`post-title.md`的文件，这个文件内的MarkDown格式的内容就是文章的正文内容。
+
+实际上，在这一步，Hexo除了帮我们创建一个文件以外，并没有做其它额外的操作，而且事实证明，在`<_source/_posts>`目录下，即便是自己手动创建的`.md`文件，也可以被`hexo generate`命令识别。
+
+所以，我们可以直接在GitHub上，在`<_source/_posts>`目录下，手动建立一个`.md`文件，并且使用Markdown格式完成正文内容，然后再回到VPS：
+
+```bash
+$ git pull origin master #把新建的Markdown文件拿到本地
+$ hexo generate
+$ hexo deploy
+```
+
+Hexo执行完`generate`和`deploy`命令之后，对`<hexo-files>`目录下的文件并不会有任何改动，这一点可以通过`git status`命令确认，所以也就不需要再执行`git push`。
+
+#### 个人电脑
+
+在个人电脑上，我们有自己喜欢的文本编辑器，并且也不存在中文支持问题，所以完全可以在本地编辑文章，只不过要记得编辑完之后要使用`push`命令，因为我们手动改变了`<hexo-files>`内的内容，要把更改同步到GitHub以使GitHub上内容始终是最新的。
+
+```bash
+$ git pull origin master #更新本地文件确保和GitHub上保持同步
+$ hexo new post "My Post" #新建一篇博文
+#使用自己喜欢的文本编辑器完成"My Post.md"
+$ hexo generate
+$ hexo deploy
+$ git add . #将新建立的文件纳入Git的监视
+$ git commit -m "Create My Post" #提交更改
+$ git push -u origin master #之后会提示输入GitHub的账号和密码
+```
+
+### 发布新页面
+
+与发文章类似，不同在于`hexo new page page_name`命令将在`<source>`目录下创建一个名为`<page_name>`的子目录，并在该子目录下建立一个名为`index.md`的文件，如果是在GitHub上手动创建的话，不要忘记将页面的名字作为子目录的名字，而页面的内容放在子目录下的`index.md`文件中。
+
+## 总结
+
+其实Hexo本身已经是一个很优秀的博客程序，也足够方便，可是总会有一些像我这样的人会有一些奇（没）奇（事）怪（找）怪（抽）的需求，本着不折腾会死的精神，尝试了这么一套解决方法，现在用起来还算是比较顺手，只不过需要来回的敲那些命令，不过好在Linux上有个东西叫做shell脚本。
+
+以后终于可以随时随地开开心心的Hexo了。

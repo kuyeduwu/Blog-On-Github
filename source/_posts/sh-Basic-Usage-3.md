@@ -9,6 +9,8 @@ categories: Linux
 
 if语句根据不同的条件执行不同的命令，有三种不同的形式，不过都是以`if`开始，以`fi`结束：
 
+<!--more-->
+
 ```bash
 # 形式一
 if condition ; then

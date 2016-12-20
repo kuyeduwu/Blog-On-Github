@@ -73,4 +73,4 @@ deploy:
   repo: https://github.com/kuyeduwu/kuyeduwu.github.io.git
   
 # Disqus
-disqus_shortname: kuyeduwu
+disqus_shortname: myslsh

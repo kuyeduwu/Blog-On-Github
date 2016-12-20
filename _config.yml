@@ -71,3 +71,6 @@ theme: next
 deploy:
   type: git
   repo: https://github.com/kuyeduwu/kuyeduwu.github.io.git
+  
+# Disqus
+disqus_shortname: kuyeduwu

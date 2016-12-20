@@ -26,12 +26,12 @@ Ubuntu自带的关于音乐的软件叫做Rhythmbox，其实我一直没搞明�
 3. 至于说这个地址怎么拿到Ubuntu系统上就见仁见智了，你可以开一个FTP，你可以用iCloud的同步功能，甚至可以用网页版微信。
 4. 回到Ubuntu，打开Rhythmbox。
 5. 点击左侧的“Podcasts”，然后点击右侧的“Add”
-![Rhythmbox](images/Rhythmbox.png)
+![Rhythmbox](/images/Rhythmbox.png)
 6. 在搜索框中填入第2步获得的播客地址，然后点击“Search”。
 7. 稍等片刻下面的列表中就会出现播客的名字和可订阅的剧集。
 8. 点击“Search”旁边的“Subscribe”，从而把当前播客添加到订阅列表。
 9. 最后点击“Subscribe”旁边的“Close”按钮，就会回到播客列表，现在就可以在Rhythmbox中收听播客了。
-![Rhythmbox](images/Rhythmbox-Add-Podcast.png)
+![Rhythmbox](/images/Rhythmbox-Add-Podcast.png)
 
 ## 存在的问题
 

@@ -1,5 +1,5 @@
 ---
-title: 用Ubuntu自带播放器Rhythmbox收听iTunes播客
+title: Ubuntu下的图片编辑程序
 date: 2016-12-20 22:10:49
 tags: Ubuntu
 categories: Linux

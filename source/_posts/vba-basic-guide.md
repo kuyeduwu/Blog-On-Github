@@ -38,29 +38,30 @@ categories: Office Skill
   - VBA语言基础 - 变量
   - VBA语言基础 - 判断
   - VBA语言基础 - 循环
-  
+
 2. Excel VBA中的常用对象
   - Workbook对象
   - Worksheet对象
   - Range对象
   - Cell对象
+
 3. Excel VBA中的常用事件 - 即VBA代码的触发
   - Workbook事件
   - Worksheet事件
-  
+
 4. 用户窗体
   - 按钮
   - 文本框
   - 下拉菜单
   - 单选框
   - 复选框
-5. 高级应用
 
+5. 高级应用
   - VBA对图表，数据透析表的操作
   - 数组和集合
   - 字典
   - 类模块
-  
+
 6. 其它Office应用中的VBA
   - Word
   - Outlook

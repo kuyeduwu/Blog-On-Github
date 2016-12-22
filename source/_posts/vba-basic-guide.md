@@ -32,7 +32,6 @@ categories: Office Skill
 本教程目录暂定为：
 
 1. 基础部分
-
   - VBA编辑器的使用
   - VBA语言基础 - 过程和函数
   - VBA语言基础 - 对象， 方法和属性
@@ -41,25 +40,20 @@ categories: Office Skill
   - VBA语言基础 - 循环
   
 2. Excel VBA中的常用对象
-
   - Workbook对象
   - Worksheet对象
   - Range对象
   - Cell对象
-  
 3. Excel VBA中的常用事件 - 即VBA代码的触发
-
   - Workbook事件
   - Worksheet事件
   
 4. 用户窗体
-
   - 按钮
   - 文本框
   - 下拉菜单
   - 单选框
   - 复选框
-  
 5. 高级应用
 
   - VBA对图表，数据透析表的操作

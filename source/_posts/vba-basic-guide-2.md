@@ -69,7 +69,7 @@ categories: Office Skill
     1. 录制的宏直接保存在**FileA**当中，无论谁打开**FileA**都可以找到并运行**MacroA**。如果希望将**MacroA**用于其它文件，需要同时打开**FileA**。
     2. 录制的宏保存在一个新的文件——**FileB**中，**FileA**中不存在任何关于**MacroA**的内容。如果希望在其它工作薄中运行**MacroA**，需要同时打开**FileB**。
     3. 录制的宏保存在一个叫做“Personal Macro Workbook”的隐藏文件中，**FileA**中不存在任何关于**MacroA**的内容，只要在同一台电脑上，以后任何时候打开任何**任何Excel文件**，都可以运行**MacroA**。
-               
+
 - Description: 为将要录制的Macro提供一些描述，可以留空。
 
 #### 录制进行中
@@ -97,9 +97,9 @@ categories: Office Skill
 
 ![Excel Message](/images/save-macro-warning.png)
 
-	原因在于从Office 2007开始，Excel不能在普通的工作簿中保存宏信息，如果需要保存宏信息，需要把工作薄的格式修改为Macro-Enabled Workbook(*.xlsm)。
+    原因在于从Office 2007开始，Excel不能在普通的工作簿中保存宏信息，如果需要保存宏信息，需要把工作薄的格式修改为Macro-Enabled Workbook(*.xlsm)。
 
-	在收到该提示时，如果点“Yes”，那么所录制的宏信息会丢失，只能够保存针对工作表内容的更改；如果要保留宏信息，需要点“No”，然后在弹出的“Save As”对话框中，将“Save as type”选择为Macro-Enabled Workbook。
+    在收到该提示时，如果点“Yes”，那么所录制的宏信息会丢失，只能够保存针对工作表内容的更改；如果要保留宏信息，需要点“No”，然后在弹出的“Save As”对话框中，将“Save as type”选择为Macro-Enabled Workbook。
 
  - 宏保存在新工作簿(New Workbook):
 

@@ -1,5 +1,5 @@
 layout: posts
-title: VBA简明教程之二 - VBA基础和VBA编辑器
+title: VBA简明教程之二 - VBA基础概念和宏的录制
 date: 2016-12-23 23:28:01
 tags: VBA
 categories: Office Skill
@@ -10,6 +10,8 @@ categories: Office Skill
 以下图为例，准备3份不同的Excel文件，分别命名为“2016 Revenues”，“2015 Revenues”和“2014 Revenues”。
  
 每份文件只有B3:M5区域的数字不同，以及A1单元格内的标题内容不同，其它内容保持一致。
+
+<!--more-->
 
 ![Sample Data](/images/sample-data.png)
  
@@ -24,10 +26,12 @@ categories: Office Skill
  
 ## 宏
  
-所谓“宏”，其英文版原文为“Macro”，宏的实际内容就是一条一条的VBA语句。
+所谓“宏”，其英文版原文为“Macro”，宏的实际内容就是一条一条自动生成的VBA语句。
 
 在我们正式开始介绍VBA语句之前，可以将宏理解为一系列操作的集合，在运行宏的时候，实际上是按照顺序自动执行其中的所有操作。针对同样的操作步骤，宏自动执行的速度要远快于手动操作的速度。
- 
+
+正是由于宏可以自动生成VBA语句，在正式开始学习VBA之前，有必要了解一下宏的基本操作。
+
 ### 宏的录制
  
 #### 开始录制
@@ -60,7 +64,7 @@ categories: Office Skill
 	2. New Workbook - 将宏保存在一个新的工作簿中。
 	3. Personal Macro Workbook - 将宏保存在一个独立的工作簿中。
 
-	假设当前的工作簿的名字叫做**FileA**，宏的名字叫做**MacroA**，以此解释一下三个选项的区别：
+假设当前的工作簿的名字叫做**FileA**，宏的名字叫做**MacroA**，以此解释一下三个选项的区别：
 
 	1. 录制的宏直接保存在**FileA**当中，无论谁打开**FileA**都可以找到并运行**MacroA**。如果希望将**MacroA**用于其它文件，需要同时打开**FileA**。
 	2. 录制的宏保存在一个新的文件——**FileB**中，**FileA**中不存在任何关于**MacroA**的内容。如果希望在其它工作薄中运行**MacroA**，需要同时打开**FileB**。
@@ -74,8 +78,8 @@ categories: Office Skill
  
 录制过程中并没有一个明确的状态指示，只有两点：
  
-	1. Developer菜单下的**Record Macro**命令变为**Stop Recording**。
-	2. Excel窗口左下角的**Record Macro**命令变为**Stop Recording**的图标。
+1. Developer菜单下的**Record Macro**命令变为**Stop Recording**。
+2. Excel窗口左下角的**Record Macro**命令变为**Stop Recording**的图标。
  
 #### 结束录制
  

@@ -66,9 +66,9 @@ categories: Office Skill
 
 假设当前的工作簿的名字叫做**FileA**，宏的名字叫做**MacroA**，以此解释一下三个选项的区别：
 
-	1. 录制的宏直接保存在**FileA**当中，无论谁打开**FileA**都可以找到并运行**MacroA**。如果希望将**MacroA**用于其它文件，需要同时打开**FileA**。
-	2. 录制的宏保存在一个新的文件——**FileB**中，**FileA**中不存在任何关于**MacroA**的内容。如果希望在其它工作薄中运行**MacroA**，需要同时打开**FileB**。
-	3. 录制的宏保存在一个叫做“Personal Macro Workbook”的隐藏文件中，**FileA**中不存在任何关于**MacroA**的内容，只要在同一台电脑上，以后任何时候打开任何**任何Excel文件**，都可以运行**MacroA**。
+    1. 录制的宏直接保存在**FileA**当中，无论谁打开**FileA**都可以找到并运行**MacroA**。如果希望将**MacroA**用于其它文件，需要同时打开**FileA**。
+    2. 录制的宏保存在一个新的文件——**FileB**中，**FileA**中不存在任何关于**MacroA**的内容。如果希望在其它工作薄中运行**MacroA**，需要同时打开**FileB**。
+    3. 录制的宏保存在一个叫做“Personal Macro Workbook”的隐藏文件中，**FileA**中不存在任何关于**MacroA**的内容，只要在同一台电脑上，以后任何时候打开任何**任何Excel文件**，都可以运行**MacroA**。
                
 - Description: 为将要录制的Macro提供一些描述，可以留空。
 

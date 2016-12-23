@@ -48,21 +48,29 @@ categories: Office Skill
 点击录制按钮之后会遇到一个窗口：
  
 ![Macro Description](/images/macro-description.png)
- 
-- Macro name: 为将要录制的宏提供一个名字，Excel中对宏的名字有如下要求：
-	1. 只能以字母作为开头。
-	2. 不能包括空格以及其他特殊符号。
-	3. 不能和Excel内置的一些公式名字或其它关键字冲突。
-	4. 不能为空。
-               
-- Shortcut key: 为将要录制的宏指定一个快捷键，只能使用字母，可以留空。
 
-	*注意：在设定快捷键的时候千万小心。因为默认的组合键是使用Ctrl+字母，所以很容易覆盖掉系统默认快捷键，譬如说，系统默认Ctrl+S是保存的快捷键，但是如果这里指定字母为“s”，那么Ctrl+S将不再执行保存功能，而是执行你所录制的宏。如果真的想在这里输入“s”的话，可以输入大写的“s”，从而使组合快捷键变为Ctrl+Shift+S，这个组合键曾经作为另存为的快捷键存在于2003版的Office当中，自2007版本开始便取消了，所以不用担心存在冲突。*
- 
-- Store macro in: 宏的存储位置，一般会提供三个选项：
-	1. This Workbook - 默认选项，将宏保存在当前工作簿中。
-	2. New Workbook - 将宏保存在一个新的工作簿中。
-	3. Personal Macro Workbook - 将宏保存在一个独立的工作簿中。
+##### Macro name
+
+为将要录制的宏提供一个名字，Excel中对宏的名字有如下要求：
+
+1. 只能以字母作为开头。
+2. 不能包括空格以及其他特殊符号。
+3. 不能和Excel内置的一些公式名字或其它关键字冲突。
+4. 不能为空。
+
+##### Shortcut key
+
+为将要录制的宏指定一个快捷键，只能使用字母，可以留空。
+
+*注意：在设定快捷键的时候千万小心。因为默认的组合键是使用Ctrl+字母，所以很容易覆盖掉系统默认快捷键，譬如说，系统默认Ctrl+S是保存的快捷键，但是如果这里指定字母为“s”，那么Ctrl+S将不再执行保存功能，而是执行你所录制的宏。如果真的想在这里输入“s”的话，可以输入大写的“s”，从而使组合快捷键变为Ctrl+Shift+S，这个组合键曾经作为另存为的快捷键存在于2003版的Office当中，自2007版本开始便取消了，所以不用担心存在冲突。*
+
+##### Store macro in
+
+宏的存储位置，一般会提供三个选项:
+
+1. This Workbook - 默认选项，将宏保存在当前工作簿中。
+2. New Workbook - 将宏保存在一个新的工作簿中。
+3. Personal Macro Workbook - 将宏保存在一个独立的工作簿中。
 
 假设当前的工作簿的名字叫做**FileA**，宏的名字叫做**MacroA**，以此解释一下三个选项的区别：
 
@@ -70,7 +78,9 @@ categories: Office Skill
 2. 录制的宏保存在一个新的文件——**FileB**中，**FileA**中不存在任何关于**MacroA**的内容。如果希望在其它工作薄中运行**MacroA**，需要同时打开**FileB**。
 3. 录制的宏保存在一个叫做“Personal Macro Workbook”的隐藏文件中，**FileA**中不存在任何关于**MacroA**的内容，只要在同一台电脑上，以后任何时候打开任何**任何Excel文件**，都可以运行**MacroA**。
 
-- Description: 为将要录制的Macro提供一些描述，可以留空。
+##### Description
+
+为将要录制的Macro提供一些描述，可以留空。
 
 #### 录制进行中
  
@@ -93,7 +103,9 @@ categories: Office Skill
  
 根据录制时所选择的存储位置的不同，在保存当前工作薄的时候会有不同的提示：
  
- - 宏保存在当前工作薄(This Workbook)：收到如下提示：
+#### 宏保存在当前工作薄(This Workbook)
+
+收到如下提示：
 
 ![Excel Message](/images/save-macro-warning.png)
 
@@ -101,21 +113,21 @@ categories: Office Skill
 
 在收到该提示时，如果点“Yes”，那么所录制的宏信息会丢失，只能够保存针对工作表内容的更改；如果要保留宏信息，需要点“No”，然后在弹出的“Save As”对话框中，将“Save as type”选择为Macro-Enabled Workbook。
 
- - 宏保存在新工作簿(New Workbook):
+#### 宏保存在新工作簿(New Workbook)
 
 在保存当前工作簿时，不会有错误提示，可以正常保存，但是一定要注意要将储存有宏信息的新工作簿保存为Macro-Enabled Workbook，道理同上。
 
- - 宏保存在Personal Macro Workbook：
+#### 宏保存在Personal Macro Workbook
 
  在保存当前工作簿时候，不会有错误提示，可以正常保存，但是当要退出Excel程序的时候，会收到如下错误提示：
 
  ![Excel Message](/images/save-personal-macro-book.png)
 
- 	此时应当点击"Save"，否则我们录制的宏将不会被保存。
+此时应当点击"Save"，否则我们录制的宏将不会被保存。
 
- 	*注意：之所以在退出Excel程序的时候才会收到这样的提示，是因为Personal Macro Workbook是一个隐藏的Excel文件，正常情况下无法直接操作这个文件。*
+*注意：之所以在退出Excel程序的时候才会收到这样的提示，是因为Personal Macro Workbook是一个隐藏的Excel文件，正常情况下无法直接操作这个文件。*
                
->动手：
+>动手练习：
 
 >关闭所有已打开的Excel程序，然后打开“2016 Revenues”。
 

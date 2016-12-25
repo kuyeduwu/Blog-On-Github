@@ -7,6 +7,8 @@ categories: Linux
 
 前一段时间把自己的主力电脑从Win迁移到了Ubuntu，对中途所做的一些配置做简要记录，以为后续参考。
 
+<!--more-->
+
 ## 硬件平台
 
 惠普G4-2318tx: i5-3210; 500GB HDD; 4GB RAM。

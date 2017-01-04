@@ -9,6 +9,8 @@ categories: Python
 
 There are 2 existing versions of Python: Python 2.7.x and Python 3.5.x, I don't know the detailed discrepancies between the two versions but I think the newer is the future, so this note is all about Python 3.5.x and above.
 
+<!--more-->
+
 ## Python on Linux
 
 Many Linux distributions use Python 2.7.x by default, since the core of many popular workspaces on Linux like Unity, Gnome and KDE are based on Python 2.7.x.

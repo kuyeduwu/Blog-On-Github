@@ -1,5 +1,5 @@
 ---
-title: shell脚本入门之一 - 变量
+title: shell脚本入门之二 - 变量
 date: 2016-12-14 14:54:25
 tags: Linux
 categories: Linux

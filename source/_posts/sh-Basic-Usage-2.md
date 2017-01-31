@@ -1,8 +1,6 @@
 ---
 title: shell脚本入门之二 - 变量
-<<<<<<< HEAD
 date: 2016-12-15 14:54:25
->>>>>>> c4b8e497ffac6489cb9ee1752b2cbc6833463f9c
 tags: Linux
 categories: Linux
 ---

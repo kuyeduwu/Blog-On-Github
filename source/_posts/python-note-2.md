@@ -16,6 +16,8 @@ Python uses `{}` to represent dictionary:
 98
 ```
 
+<!--more-->
+
 Use `in` to check if the key is included in the dictionary:
 ```bash
 >>> 'Angel' in scores

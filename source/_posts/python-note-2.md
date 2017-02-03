@@ -1,3 +1,4 @@
+---
 layout: posts
 title: Python Note - Day 2
 date: 2017-01-05 10:18:21
@@ -5,7 +6,7 @@ tags: Python
 categories: Python
 ---
 
-## dict
+## Dictionary
 
 Python uses `{}` to represent dictionary:
 ```bash
@@ -87,9 +88,6 @@ def myFunc(x): # myFunc is the function name, x is the parameter for the functio
 
 print(myFunc(-1))
 ```
-
-
-
 
 ### Arguments
 #### Position Arguments

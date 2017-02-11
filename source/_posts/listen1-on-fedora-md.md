@@ -10,6 +10,8 @@ categories: Linux
 
 在GitHub上偶然发现一个针对国内在线音乐平台的一个神器：Listen1，项目地址：[GitHub](https://github.com/listen1/listen1_desktop)
 
+<!--more-->
+
 此神器的之所以被称为神器，原因有二：
 1. 同时提供网易云音乐，虾米，QQ音乐三家的曲库。
 2. 有Linux客户端。

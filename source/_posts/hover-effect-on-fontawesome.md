@@ -41,5 +41,6 @@ Thanks to: [Hans](http://makemysoft.com/)
 ## Instruction
 
  - `\f204` is the css content for the Font Awesome icon: fa-toggle-off, and `\f205` is the css content for icon: fa-toggle-on.
+ - `f204` and `f205` are also the unicode values for the corresponding icons, you can find a full list of unicode values on [W3Shcools](https://www.w3schools.com/icons/icons_reference.asp) or [here](http://astronautweb.co/snippet/font-awesome/)
  - The `:before` keyword is necessary.
  - The container element (`#hover-effect`) should have the class `fa`.

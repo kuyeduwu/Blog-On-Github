@@ -2,7 +2,7 @@
 title: 何为……具体
 date: 2017-12-16 20:46:30
 tags:
-categories: Others
+categories: Other
 ---
 
 摘自内涵段子网站

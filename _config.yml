@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: MySlsh
+title: Rick's Blog
 subtitle:
 description: 以为漂泊是成长，必经的路牌
 author: Rick
-language: zh-Hans
-timezone:
+language: en
+timezone: Asia/Shanghai
 avatar: /images/avatar.gif
 
 # URL

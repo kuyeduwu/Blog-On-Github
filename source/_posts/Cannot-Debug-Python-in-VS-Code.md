@@ -7,7 +7,7 @@ categories: Accessories
 
 When trying to debug python files from vscode, you might run into this error:
 
-![Timeout Error](images/vscode1.png)
+![Timeout Error](/images/vscode1.png)
 
 <!--more-->
 
@@ -17,7 +17,7 @@ One of the possible reason is that you are using PowerShell as the default termi
 
 If you have the Python extension installed, you should have got a notice about this:
 
-![Python Extension Notice](images/J142kj9lqg.png)
+![Python Extension Notice](/images/J142kj9lqg.png)
 
 You can just click the `Use Command Prompt` button, then kill the current terminal and reopen it.
 

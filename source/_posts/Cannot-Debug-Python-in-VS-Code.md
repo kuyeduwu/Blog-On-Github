@@ -1,7 +1,7 @@
 ---
 title: Cannot Debug Python in VS Code
 date: 2018-11-12 16:25:58
-tags: vscode;Python
+tags: vscode Python
 categories: Accessories
 ---
 

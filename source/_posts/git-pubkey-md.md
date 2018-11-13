@@ -1,7 +1,7 @@
 ---
 title: SSH连接提示 Permission denied (publickey)的解决方法
 date: 2017-07-11 22:07:16
-tags: Git;SSH
+tags: [Git,SSH]
 categories: Accessories
 ---
 

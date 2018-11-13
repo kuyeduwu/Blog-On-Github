@@ -1,7 +1,7 @@
 ---
 title: 404 Error When Loading WOFF2 Fonts from Azure Websites
 date: 2018-03-27 13:25:17
-tags: azure;font;woff2
+tags: [azure,font,woff2]
 categories: Azure
 ---
 

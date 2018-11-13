@@ -1,7 +1,7 @@
 ---
 title: FontAwesome Hover Effect without JS
 date: 2018-01-30 14:29:48
-tags: FontAwesome,CSS
+tags: [FontAwesome,CSS]
 categories: CSS
 ---
 

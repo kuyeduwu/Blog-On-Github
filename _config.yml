@@ -64,7 +64,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: next-reloaded
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -74,3 +74,334 @@ deploy:
   
 # Disqus
 disqus_shortname: myslsh
+
+theme_config:
+  favicon:
+    small: /favicon.ico
+    medium: /favicon.ico
+    apple_touch_icon: /favicon.ico
+    safari_pinned_tab: /favicon.ico
+
+  footer:
+    # Specify the date when the site was setup. If not defined, current year will be used.
+    since: 2018
+
+    # Icon between year and copyright info.
+    icon:
+      # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
+      # `heart` is recommended with animation in red (#ff0000).
+      name: user
+      # If you want to animate the icon, set it to true.
+      animated: false
+      # Change the color of icon, using Hex Code.
+      color: "#808080"
+
+    # If not defined, `author` from Hexo `_config.yml` will be used.
+    copyright:
+
+    powered:
+      # Hexo link (Powered by Hexo).
+      enable: true
+      # Version info of Hexo after Hexo link (vX.X.X).
+      version: true
+
+    theme:
+      # Theme & scheme info link (Theme - NexT.scheme).
+      enable: true
+      # Version info of NexT after scheme info (vX.X.X).
+      version: true
+
+  menu:
+    home: / || home
+    about: /about/ || user
+    tags: /tags/ || tags
+    categories: /categories/ || th
+    archives: /archives/ || archive
+    #schedule: /schedule/ || calendar
+    #sitemap: /sitemap.xml || sitemap
+    #commonweal: /404/ || heartbeat
+
+  # Enable / Disable menu icons / item badges.
+  menu_settings:
+    icons: true
+    badges: false
+
+  scheme: Gemini
+
+
+  # ---------------------------------------------------------------
+  # Sidebar Settings
+  # See: https://theme-next.org/docs/theme-settings/sidebar
+  # ---------------------------------------------------------------
+
+  # Posts / Categories / Tags in sidebar.
+  site_state: true
+
+  # Social Links
+  # Usage: `Key: permalink || icon`
+  # Key is the link label showing to end users.
+  # Value before `||` delimiter is the target permalink.
+  # Value after `||` delimiter is the name of Font Awesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
+  social:
+    GitHub: https://github.com/kuyeduwu || github
+
+  social_icons:
+    enable: true
+    icons_only: false
+    transition: false
+
+  # Blog rolls
+  links_settings:
+    icon: link
+    title: Links
+    # Available values: block | inline
+    layout: block
+
+  links:
+    #Title: http://example.com
+
+  # Sidebar Avatar
+  avatar:
+    # In theme directory (source/images): /images/avatar.gif
+    # In site directory (source/uploads): /uploads/avatar.gif
+    # You can also use other linking images.
+    url: /images/avatar.gif
+    # If true, the avatar would be dispalyed in circle.
+    rounded: true
+    # If true, the avatar would be rotated with the cursor.
+    rotated: false
+
+  # Wechat Subscriber
+  wechat_subscriber:
+    enable: false
+    qcode: #/uploads/wechat-qcode.jpg
+    #description: Subscribe to my blog by scanning my public wechat account.
+
+  # Reward (Donate)
+  reward_settings:
+    # If true, reward would be displayed in every article by default.
+    # You can show or hide reward in a specific article throuth `reward: true | false` in Front-matter.
+    enable: false
+    animation: false
+    #comment: Donate comment here.
+
+  reward:
+    #wechatpay: /images/wechatpay.png
+    #alipay: /images/alipay.png
+    #bitcoin: /images/bitcoin.png
+
+  # Related popular posts
+  # Dependencies: https://github.com/tea3/hexo-related-popular-posts
+  related_posts:
+    enable: false
+    title: # Custom header, leave empty to use the default one
+    display_in_home: false
+    params:
+      maxCount: 5
+      #PPMixingRate: 0.0
+      #isDate: false
+      #isImage: false
+      #isExcerpt: false
+
+  # Reading progress bar
+  reading_progress:
+    enable: true
+    # Available values: top | bottom
+    position: top
+    color: "#37c6c0"
+    height: 2px
+
+  # `Follow me on GitHub` banner in the top-right corner.
+  github_banner:
+    enable: true
+    permalink: https://github.com/kuyeduwu
+    title: Follow me on GitHub
+
+  # A JavaScript library for zooming images like Medium.
+  # Do not enable both `fancybox` and `mediumzoom`.
+  # For more information: https://github.com/francoischalifour/medium-zoom
+  mediumzoom: true
+
+  # ---------------------------------------------------------------
+  # Comments Settings
+  # See: https://theme-next.org/docs/third-party-services/comments
+  # ---------------------------------------------------------------
+
+  # Multiple Comment System Support
+  comments:
+    # Available values: tabs | buttons
+    style: tabs
+    # Choose a comment system to be displayed by default.
+    # Available values: changyan | disqus | disqusjs | facebook_comments_plugin | gitalk | livere | valine | vkontakte
+    active: disqus
+    # Setting `true` means remembering the comment system selected by the visitor.
+    storage: true
+    # Modify texts or order for any navs, here are some examples.
+    nav:
+      #disqus:
+      #  text: Load Disqus
+      #  order: -1
+      #facebook_comments_plugin:
+      #  text: <i class="fa fa-facebook-official" aria-hidden="true"></i> facebook
+      #gitalk:
+      #  order: -2
+
+  # Disqus
+  disqus:
+    enable: true
+    shortname: Rick
+    count: true
+    lazyload: false
+    #post_meta_order: 0
+
+  # DisqusJS
+  # Alternative Disqus - Render comment component using Disqus API.
+  # Demo: https://suka.js.org/DisqusJS/
+  # For more information: https://github.com/SukkaW/DisqusJS
+  disqusjs:
+    enable: false
+    # API Endpoint of Disqus API (https://disqus.com/api/).
+    # Leave api empty if you are able to connect to Disqus API.
+    # Otherwise you need a reverse proxy for Disqus API.
+    # For example:
+    # api: https://disqus.skk.moe/disqus/
+    api:
+    apikey: # Register new application from https://disqus.com/api/applications/
+    shortname: # See: https://disqus.com/admin/settings/general/
+
+  # Changyan
+  changyan:
+    enable: false
+    appid:
+    appkey:
+    #post_meta_order: 0
+
+  # Valine
+  # You can get your appid and appkey from https://leancloud.cn
+  # For more information: https://valine.js.org, https://github.com/xCss/Valine
+  valine:
+    enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
+    appid: # Your leancloud application appid
+    appkey: # Your leancloud application appkey
+    notify: false # Mail notifier. See: https://github.com/xCss/Valine/wiki
+    verify: false # Verification code
+    placeholder: Just go go # Comment box placeholder
+    avatar: mm # Gravatar style
+    guest_info: nick,mail,link # Custom comment header
+    pageSize: 10 # Pagination size
+    language: # Language, available values: en, zh-cn
+    visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
+    comment_count: true # If false, comment count will only be displayed in post page, not in home page
+    #post_meta_order: 0
+
+  # LiveRe comments system
+  # You can get your uid from https://livere.com/insight/myCode (General web site)
+  livere_uid: # <your_uid>
+
+  # Gitalk
+  # Demo: https://gitalk.github.io
+  # For more information: https://github.com/gitalk/gitalk
+  gitalk:
+    enable: false
+    github_id: # GitHub repo owner
+    repo: # Repository name to store issues
+    client_id: # GitHub Application Client ID
+    client_secret: # GitHub Application Client Secret
+    admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+    distraction_free_mode: true # Facebook-like distraction free mode
+    # Gitalk's display language depends on user's browser or system environment
+    # If you want everyone visiting your site to see a uniform language, you can set a force language value
+    # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
+    language:
+
+
+  # ---------------------------------------------------------------
+  # Post Widgets & Content Sharing Services
+  # See: https://theme-next.org/docs/third-party-services/post-widgets
+  # ---------------------------------------------------------------
+
+  # Facebook SDK Support
+  facebook_sdk:
+    enable:       false
+    app_id:       # <app_id>
+    fb_admin:     # <user_id>
+    like_button:  # true
+    webmaster:    # true
+
+  # Facebook comments plugin
+  # This plugin depends on Facebook SDK.
+  # If facebook_sdk.enable is false, Facebook comments plugin is unavailable.
+  facebook_comments_plugin:
+    enable:       false
+    num_of_posts: 10    # Minimum posts num is 1
+    width:        100%  # Default width is 550px
+    scheme:       light # Default scheme is light (light or dark)
+    #post_meta_order: 0
+
+  # VKontakte API Support
+  # To get your AppID visit https://vk.com/editapp?act=create
+  vkontakte_api:
+    enable:       false
+    app_id:       # <app_id>
+    like:         true
+    comments:     true
+    num_of_posts: 10
+
+  # Star rating support to each article.
+  # To get your ID visit https://widgetpack.com
+  rating:
+    enable: false
+    id:     # <app_id>
+    color:  fc6423
+
+  # AddThis Share. See: https://www.addthis.com
+  # Go to https://www.addthis.com/dashboard to customize your tools.
+  add_this_id:
+
+  # Show Views / Visitors of the website / page with busuanzi.
+  # Get more information on http://ibruce.info/2015/04/04/busuanzi
+  busuanzi_count:
+    enable: false
+    total_visitors: true
+    total_visitors_icon: user
+    total_views: true
+    total_views_icon: eye
+    post_views: true
+    post_views_icon: eye
+
+
+
+  # ---------------------------------------------------------------
+  # Search Services
+  # See: https://theme-next.org/docs/third-party-services/search-services
+  # ---------------------------------------------------------------
+
+  # Algolia Search
+  # For more information: https://www.algolia.com
+  algolia_search:
+    enable: false
+    hits:
+      per_page: 10
+    labels:
+      input_placeholder: Search for Posts
+      hits_empty: "We didn't find any results for the search: ${query}"
+      hits_stats: "${hits} results found in ${time} ms"
+
+  # Local Search
+  # Dependencies: https://github.com/wzpan/hexo-generator-search
+  local_search:
+    enable: true
+    # If auto, trigger search by changing input.
+    # If manual, trigger search by pressing enter key or search button.
+    trigger: auto
+    # Show top n results per article, show all results by setting to -1
+    top_n_per_article: 1
+    # Unescape html strings to the readable one.
+    unescape: false
+    # Preload the search data when the page loads.
+    preload: false
+
+search:
+  path: search.xml
+  field: post
+  content: true
